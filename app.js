@@ -1,10 +1,10 @@
-// Aura Inc - Interactions page produit
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const buyBtn = document.querySelector('.buy-btn');
     if (buyBtn) {
         buyBtn.addEventListener('click', function() {
-            // Animation bouton
+            
             buyBtn.textContent = 'Merci pour votre achat !';
             buyBtn.style.background = '#bfa76a';
             buyBtn.style.color = '#fff';
@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
