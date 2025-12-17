@@ -165,7 +165,6 @@ function updateEdition() {
               try { hiddenModel.setAttribute('camera-orbit', `0deg 75deg ${modelRadius}`); } catch(e){}
               hiddenModel.removeEventListener('load', _setHiddenOrbit);
             });
-          c
             hiddenModel.style.opacity = '0';
             hiddenModel.style.visibility = 'hidden';
             hiddenModel.setAttribute('src', newSrc);
@@ -486,4 +485,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
 
