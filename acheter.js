@@ -2,7 +2,7 @@
 const products = [
   { id: 0, title: 'Édition Mimosa', model: '3d_model/canette_mimosa.glb', price: 99.00, desc: '', longDesc: `Édition Mimosa —\n\nCette édition incarne la recherche d'une expression florale pure : sélection des matières premières, extraction maîtrisée et montage olfactif pensé pour la transparence et la finesse. Notes de tête lumineuses s'ouvrent sur un coeur floral délicat, soutenu par une structure sèche et nette qui prolonge la lisibilité du parfum.` },
   { id: 1, title: 'Édition Violette', model: '3d_model/canette_violette.glb', price: 99.00, desc: 'Une profondeur florale maîtrisée.', longDesc: `Édition Violette — Une profondeur florale maîtrisée.\n\nRiche et nuancée, cette édition explore les facettes veloutées de la violette. Le profil se développe en couches progressives : végétal, poudré, puis résolument floral. Conçue pour l'observation attentive, la Violette offre une présence définie sans lourdeur.` },
-  { id: 2, title: 'Édition Menthe', model: '3d_model/canette_menthe.glb', price: 99.00, desc: 'Un souffle d’une grande fraîcheur.', longDesc: `Édition Menthe — Un souffle d’une grande fraîcheur.\n\nFidèle à une fraîcheur maîtrisée, la Menthe propose une ouverture éclatante, suivie d'une tenue délicate qui met en valeur des accents verts et minéraux. Cette édition privilégie la netteté et la persistance d'un registre rafraîchissant, pensé pour l'observateur exigeant.` }
+  { id: 2, title: 'Édition Menthe', model: '3d_model/canette_menthe.glb', price: 99.00, desc: 'Un souffle d’une grande fraîcheur.', longDesc: `Inspirée d’un environnement ouvert et structuré, l’Édition Menthe restitue une sensation d’air clair et dynamique. L’expérience s’ouvre sur une impression immédiate de fraîcheur, puis s’installe dans une atmosphère stable, marquée par des tonalités vertes et minérales. Cette édition privilégie la netteté, la lisibilité et la persistance d’un espace rafraîchissant, pensé pour l’observation sensorielle exigeante.` }
 ];
 
 function q(sel){ return document.querySelector(sel); }
@@ -95,4 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
 
