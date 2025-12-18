@@ -294,13 +294,7 @@ model-viewer.edition-img {
   color: #bfa76a;
 }
   .edition-content .experience-btn {
-  display: inline-block;
-  background: #bfa76a;
-    margin: 0;
-    padding: 0;
-    font-family: 'DM Sans', Arial, sans-serif;
-    background: linear-gradient(120deg, #f5f5f7 0%, #e7e3e0 100%);
-    color: #111;
+    display: inline-block;
     box-sizing: border-box;
   }
 
