@@ -370,7 +370,7 @@ model-viewer.edition-img {
 
   @media (max-width: 700px) {
     .navbar-container {
-      flex-direction: column;
+      transform: translateY(-140px) !important; /* raise text/button a bit more */
       align-items: flex-start;
       padding: 0.5rem 1rem;
     }
@@ -495,11 +495,11 @@ html, body {
 
 @media (max-width: 480px) {
   .section-exclusive { padding: 1.2rem 0 !important; min-height: 460px !important; }
-  .exclusive-content-text { z-index: 999999 !important; position: relative !important; }
-  .section-exclusive .exclusive-image {
-    left: 50% !important;
-    top: 160px !important; 
-    transform: translateX(-50%) !important;
+    width: 120% !important;
+    max-width: 1400px !important;
+    max-height: 980px !important;
+    top: -20px !important; /* lower the image a bit on mobile */
+    transform: translateY(-5%) !important; /* reduce upward transform */
     width: 95vw !important;
     max-width: 96vw !important;
     max-height: 52vh !important;
@@ -586,11 +586,11 @@ html, body {
 
 @media (max-width: 900px) {
   .hero {
-    align-items: center;
-    padding: 10.5rem 4vw 2rem 4vw;
-    background:
-      linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.85) 30%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0) 100%),
-      #fff;
+    width: 150% !important;
+    max-width: 1400px !important;
+    max-height: 900px !important;
+    top: -40px !important; /* lower further on small phones */
+    transform: translateY(-10%) !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -1191,6 +1191,13 @@ html, body {
   .footer-brand img { padding: 0.1rem 0.2rem !important; }
 }
 
+/* Desktop: nudge exclusive image slightly to the right */
+@media (min-width: 901px) {
+  .exclusive-image {
+    right: 6% !important;
+  }
+}
+
 
 @media (max-width: 900px) {
   
@@ -1614,8 +1621,7 @@ model-viewer .poster {
 @media (max-width: 480px) {
   .section-exclusive > .exclusive-image, .section-exclusive .exclusive-image {
     width: 260vw !important;
-    top: 100px !important;
+    top: 120px !important;
     transform: translateX(-50%) translateY(-60px) !important;
   }
 }
-
