@@ -11,7 +11,7 @@
 	<nav class="navbar">
 		<div class="navbar-container">
 			<span class="navbar-logo"><img src="images/pure logo final-02.png" alt="Pure" class="logo-img"></span>
-			<ul class="navbar-links">
+			<ul class="navbar-links" id="navbar-links">
 				<li><a href="#">Accueil</a></li>
 				<li><a href="#carrousel">Éditions</a></li>
 				<li><a href="#experience">Expérience</a></li>
@@ -19,6 +19,12 @@
 				<li><a href="#exclusive">Exclusivité</a></li>
 			</ul>
 
+			<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="navbar-links" aria-label="Ouvrir le menu">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			
 			<div class="nav-actions">
 				<a id="cart-link" class="cart-icon" href="Partiel/acheter.html">
 				  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -171,6 +177,7 @@ L’Édition Mimosa est issue d’un protocole rigoureux, visant la précision e
 	<script src="index.js"></script>
 </body>
 </html>
+
 
 
 
