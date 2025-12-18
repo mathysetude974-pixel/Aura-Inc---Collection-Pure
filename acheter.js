@@ -1,6 +1,6 @@
 
 const products = [
-  { id: 0, title: 'Édition Mimosa', model: '3d_model/canette_mimosa.glb', price: 99.00, desc: '', longDesc: `Édition Mimosa —\n\nCette édition incarne la recherche d'une expression florale pure : sélection des matières premières, extraction maîtrisée et montage olfactif pensé pour la transparence et la finesse. Notes de tête lumineuses s'ouvrent sur un coeur floral délicat, soutenu par une structure sèche et nette qui prolonge la lisibilité du parfum.` },
+  { id: 0, title: 'Édition Mimosa', model: '3d_model/canette_mimosa.glb', price: 99.00, desc: '', longDesc: `Cette édition explore un environnement lumineux et apaisé, pensé autour de l’équilibre et de la clarté. Chaque étape du protocole vise une restitution précise, où la sensation d’ouverture initiale laisse place à une présence douce et stable. La composition privilégie la transparence, la finesse et la continuité, offrant une lecture nette et durable, conçue pour une appréciation attentive et maîtrisée.` },
   { id: 1, title: 'Édition Violette', model: '3d_model/canette_violette.glb', price: 99.00, desc: 'Une profondeur florale maîtrisée.', longDesc: `Riche et nuancée, l’Édition Violette s’inspire d’un environnement feutré et enveloppant. L’expérience se construit par strates successives, passant d’une sensation végétale douce à une matière plus poudrée, avant de s’installer dans une atmosphère profonde et stable. Conçue pour l’observation attentive, cette édition offre une présence structurée, équilibrée et maîtrisée, sans excès ni saturation.` },
   { id: 2, title: 'Édition Menthe', model: '3d_model/canette_menthe.glb', price: 99.00, desc: 'Un souffle d’une grande fraîcheur.', longDesc: `Inspirée d’un environnement ouvert et structuré, l’Édition Menthe restitue une sensation d’air clair et dynamique. L’expérience s’ouvre sur une impression immédiate de fraîcheur, puis s’installe dans une atmosphère stable, marquée par des tonalités vertes et minérales. Cette édition privilégie la netteté, la lisibilité et la persistance d’un espace rafraîchissant, pensé pour l’observation sensorielle exigeante.` }
 ];
@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
 
 
 
