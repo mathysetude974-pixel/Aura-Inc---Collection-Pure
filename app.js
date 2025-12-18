@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const buyBtn = document.querySelector('.buy-btn');
     if (buyBtn) {
@@ -18,4 +16,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
