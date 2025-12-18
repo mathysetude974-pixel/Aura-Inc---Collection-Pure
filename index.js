@@ -33,6 +33,35 @@
     }
     updateCartLink();
 
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinksEl = document.getElementById('navbar-links');
+    if (navToggle && navLinksEl) {
+      const closeNav = () => {
+        navLinksEl.classList.remove('show');
+        navToggle.setAttribute('aria-expanded','false');
+      };
+
+      navToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        navLinksEl.classList.toggle('show');
+      });
+
+      navLinksEl.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          closeNav();
+        });
+      });
+
+      document.addEventListener('click', function(e){
+        if (!navLinksEl.classList.contains('show')) return;
+        if (!navLinksEl.contains(e.target) && !navToggle.contains(e.target)) closeNav();
+      });
+
+      window.addEventListener('resize', function(){ if (window.innerWidth > 700) closeNav(); });
+    }
+
     const productMap = { '0': { title: 'Édition Mimosa', price: 24.99 }, '1': { title: 'Édition Violette', price: 24.99 }, '2': { title: 'Édition Menthe', price: 24.99 }, 'coffret': { title: 'Coffret Prestige – Trio', price: 69.99 } };
     const overlay = document.getElementById('cart-overlay');
     const drawer = document.getElementById('cart-drawer');
@@ -70,4 +99,5 @@
   document.addEventListener('visibilitychange', function(){ if(!document.hidden) updateCartLink(); });
 
 })();
+
 
