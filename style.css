@@ -494,7 +494,7 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .section-exclusive { padding: 1.2rem 0 !important; min-height: 460px !important; }
+  .section-exclusive { padding: 1.2rem 0 !important; min-height: 460px !important; 
     width: 120% !important;
     max-width: 1400px !important;
     max-height: 980px !important;
